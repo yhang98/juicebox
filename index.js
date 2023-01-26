@@ -34,8 +34,8 @@ server.get('/add/:first/to/:second', (req, res, next) => {
    }</h1>`);
 });
 
-const PORT = 3000;
+const { PORT = 3000 } = process.env;
 server.listen(PORT, () => {
   // old stuff
-  console.log('The server is up on port: ${PORT}')
+  console.log('The server is up on port', PORT)
 });
