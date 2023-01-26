@@ -37,5 +37,5 @@ server.get('/add/:first/to/:second', (req, res, next) => {
 const PORT = 3000;
 server.listen(PORT, () => {
   // old stuff
-  console.log('The server is up on port', PORT)
+  console.log('The server is up on port: ${PORT}')
 });
